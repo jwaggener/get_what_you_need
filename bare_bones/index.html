@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <!-- V = S( vm( M.present( A(data) ) ), nap(M)) -->
+    <link rel="stylesheet" type="text/css" href="./libs/normalize.css"></link>
+    <link rel="stylesheet" type="text/css" href="src/styles/styles.css"></link>
+    <script src='./libs/jquery-1.12.1.js'></script>
+    <script src='./libs/lodash.js'></script>
+    <script src='./libs/backbone.js'></script>
+    <script src='./libs/highcharts/highcharts.js'></script>
+    <!-- JS src scripts -->
+    <script src='src/namespaces.js'></script>
+    <script src='src/fixtures/posts.js'></script>
+    <script src='src/view.js'></script>
+    <script src='src/actions/actions.js'></script>
+    <script src='src/states/states.js'></script>
+    <script src='src/models/compare_organic_vs_paid.js'></script>
+  </head>
+  <body>
+    <div id='main'></div>
+    <div id='posts'></div>
+    <script>
+      // testing out the pattern with this
+      /*view.present(
+        "#main",
+        stateViews.greet(models.compareOrganicVsPaid.present(actions.hello()))
+      );*/
+      // shows the posts
+      view.present(
+        "#posts",
+        stateViews.showAllPosts(models.compareOrganicVsPaid.present(actions.showAllPosts()))
+      );
+
+    </script>
+  </body>
+</html>

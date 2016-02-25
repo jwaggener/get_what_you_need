@@ -1,0 +1,14 @@
+
+var myvar = '<div class=\'post\'>'+
+'  <div class=\'post-content\'>'+
+'    <div>' + post.content + ''</div>'+
+'    <img src=' + post.image + ' />'+
+'  </div>'+
+'  <div class=\'metrics\'>'+
+'    <div class=\'oraganic-vs-paid\'>'+
+'      <div class=\'chart\'>'+
+'        <h1>HERE IS A CHART</h1>'+
+'      </div>'+
+'    </div>'+
+'  </div>'+
+'</div>';

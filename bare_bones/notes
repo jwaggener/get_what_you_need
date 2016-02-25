@@ -1,0 +1,9 @@
+this is how to build the view
+
+ V = S( vm( M.present( A(data) ) ), nap(M))
+
+ S - State Representation. Produces the view.
+ A - Actions that can trigger a change in the model.
+ M - The model.
+
+ nap - Next Action Predicate. A Callback that is invoked after the model is updated. Ensures functions are pure. Can be null.

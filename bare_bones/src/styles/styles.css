@@ -1,0 +1,43 @@
+* {
+  font-family: 'helvetica', sans-serif;
+  font-size: 14px;
+}
+
+.item {
+  height: 300px;
+  margin-bottom: 55px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 55px;
+}
+.post {
+  float: left;
+  width: 400px;
+}
+.avatar img{
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  float: left;
+}
+
+.avatar .name{
+  float: left;
+  padding-top: 15px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.post-content {
+  clear: both;
+}
+
+.metrics {
+  float: left;
+}
+
+.chart {
+  height: 300px;
+  width: 300px;
+}
